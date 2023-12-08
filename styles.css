@@ -1,0 +1,112 @@
+body {
+    display: flexbox;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin-top: 0;
+    padding-top: 0;
+    background: #0f3443; /* Old browsers */ 
+    background: -moz-linear-gradient(left, #0f3443 0%, #34e69f 100%); /* FF3.6-15 */ 
+    background: -webkit-linear-gradient(left, #0f3443 0%,#34e69f 100%); /* Chrome10-25,Safari5.1-6 */ 
+    background: linear-gradient(to right, #0f3443 0%,#34e69f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+    text-align: center;
+}
+
+header {
+    width: 100%; 
+    height: 10vh; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0f3443+0,34e69f+100 */ 
+    background: #0f3443; /* Old browsers */ 
+    background: -moz-linear-gradient(left, #0f3443 0%, #34e69f 100%); /* FF3.6-15 */ 
+    background: -webkit-linear-gradient(left, #0f3443 0%,#34e69f 100%); /* Chrome10-25,Safari5.1-6 */ 
+    background: linear-gradient(to right, #0f3443 0%,#34e69f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+    text-align: center;
+    color:#ddd;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+section#productos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.producto img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+}
+
+.detalle-producto {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.detalle-producto img {
+    width: 100%;
+    max-height: 30px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+h1{
+    color: whitesmoke;
+}

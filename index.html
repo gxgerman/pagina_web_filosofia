@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es, de, en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Loto del Norte</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#productos">Produkten</a></li>
+                <li><a href="#detalle-producto">Über Uns</a></li>
+                <li><a href="#footer">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <div class="producto" onclick="mostrarDetalle('Producto 1', '$19.99', 'Crema facial de día')">
+            <img src="producto1.jpg" alt="Producto 1">
+            <h2>Produkt 1</h2>
+            <p>€19.99</p>
+        </div>
+
+        <div class="producto" onclick="mostrarDetalle('Producto 2', '$29.99', 'Vela aromática')">
+            <img src="producto2.jpg" alt="Producto 2">
+            <h2>Produkt 2</h2>
+            <p>€29.99</p>
+        </div>
+
+        <!-- Agrega más productos según sea necesario -->
+    </section>
+
+    <div id="detalle-producto" class="detalle-producto">
+        <span class="cerrar" onclick="cerrarDetalle()">×</span>
+        <img id="detalle-imagen" src="" alt="Detalle del Producto">
+        <h2 id="detalle-nombre"></h2>
+        <p id="detalle-precio"></p>
+        <p id="detalle-descripcion"></p>
+        <button onclick="agregarAlCarrito()">Agregar al Carrito</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Loto del Norte</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
